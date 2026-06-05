@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Linking external CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span>Manoj.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <!-- This is the first thing visitors see -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <!-- YOUR PROFILE PICTURE - replace 'your-photo.jpg' with your image file -->
+            <div class="hero-image">
+                <img src="your-photo.jpeg" alt="Manoj Rai">
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Manoj Rai</h1>
+                <h2 class="hero-title">Computer Science Student</h2>
+                <p class="hero-description">
+                    Passionate about software development, cybersecurity, 
+                    and computer architecture. Currently exploring VHDL and backend development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Second photo - can be same or different -->
+                    <img src="your-photo.jpeg" alt="About Manoj">
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>
+                        I'm a Computer Science student with a strong interest in 
+                        backend development, cybersecurity, and hardware programming. 
+                        I enjoy solving complex problems and building efficient systems.
+                    </p>
+                    <p>
+                        Currently learning VHDL for computer architecture, 
+                        exploring database management with MySQL, and diving deep 
+                        into software engineering principles.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Manoj Rai</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Kathmandu, Nepal</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Study:</span>
+                            <span class="info-value">Computer Science</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">your@email.com</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+
+                <!-- Each skill card -->
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>Python, C, Java</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>VHDL</h3>
+                    <p>Hardware Description Language</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 40%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database</h3>
+                    <p>MySQL, SQLite</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔐</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Network Security, Linux</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web</h3>
+                    <p>HTML, CSS, Backend</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 65%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Tools</h3>
+                    <p>Git, GHDL, XAMPP</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🔧</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AND Gate in VHDL</h3>
+                        <p>A hardware implementation of a 2-input AND gate using VHDL with testbench simulation using GHDL.</p>
+                        <div class="project-tags">
+                            <span class="tag">VHDL</span>
+                            <span class="tag">GHDL</span>
+                            <span class="tag">Hardware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🗄️</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MySQL Database</h3>
+                        <p>Designed and implemented a relational database system using MySQL and phpMyAdmin with XAMPP.</p>
+                        <div class="project-tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">XAMPP</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 - Add your own -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🚀</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Your Next Project</h3>
+                        <p>Add your next awesome project here. Replace this with your real project description.</p>
+                        <div class="project-tags">
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Talk!</h3>
+                    <p>Feel free to reach out for collaborations, questions, or just a friendly chat.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>your@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Kathmandu, Nepal</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🐙</span>
+                            <span>github.com/manojrai</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact form (no JS needed - uses mailto) -->
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input">
+                    <input type="email" placeholder="Your Email" class="form-input">
+                    <textarea placeholder="Your Message" class="form-textarea" rows="5"></textarea>
+                    <button class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Manoj Rai. All rights reserved.</p>
+            <p>Built with HTML & CSS only 💪</p>
+        </div>
+    </footer>
+
+</body>
+</html>

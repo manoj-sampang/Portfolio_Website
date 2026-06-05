@@ -1,0 +1,62 @@
+/* ==========================================
+   navbar.css - Navigation Bar Styles
+   ========================================== */
+
+.navbar {
+    position: fixed;           /* stays at top when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  /* logo left, links right */
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(10, 10, 10, 0.95);  /* slightly transparent black */
+    backdrop-filter: blur(10px);          /* glass blur effect */
+    z-index: 1000;                        /* stays on top of everything */
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Logo text */
+.nav-logo span {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+/* Navigation links list */
+.nav-links {
+    display: flex;
+    list-style: none;    /* removes bullet points */
+    gap: 2rem;           /* space between links */
+}
+
+/* Individual nav link */
+.nav-links a {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation on hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;              /* starts with no width */
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;  /* grows on hover */
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;   /* full width underline on hover */
+}
